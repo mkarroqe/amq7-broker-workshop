@@ -22,7 +22,7 @@ $ tree
 |-- examples
 |-- lib
 |-- schema
-|-- web
+└-- web
 ```
 
 | Folder | Description |
