@@ -5,7 +5,7 @@
 1. Once the broker is created, navigate to the `mybroker` instance `bin` folder if not already there
 
    ```sh
-   $ cd instances/mybroker
+   $ cd instances/mybroker/bin
    ```
 
 1. Run the `artemis` script to start the broker in interactive mode
