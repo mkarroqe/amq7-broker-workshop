@@ -3,7 +3,8 @@
 #### Creating a Queue using the CLI
 
 1. Open the `etc/broker.xml` file with your favorite text editor.
-1. Add an `anycast` type address with a queue
+1. Add an `anycast` type address with a queue. 
+   > Addresses begin around line `214`.
 
    ```XML
    <address name="testQueue">
@@ -14,7 +15,7 @@
    ```
 
 1. Start the broker or restart in case it’s already running.
-1. Test the new created queue using running the following command in two (2) diferent terminal consoles
+1. Test the new created queue using running the following command in two (2) diferent terminal consoles from `instances/mybroker/bin`
 
    ```sh
    $ ./artemis consumer --destination queue://testQueue --message-count 5
