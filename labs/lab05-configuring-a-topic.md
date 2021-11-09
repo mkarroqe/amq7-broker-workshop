@@ -4,6 +4,8 @@
 
 1. Open the `etc/broker.xml` file with your favorite text editor.
 1. Add a `multicast` type address with a topic
+   
+   > Addresses start around line `214`
 
    ```XML
     <address name="testTopic">
@@ -14,7 +16,7 @@
    ```
 
 1. Start the broker or restart in case it’s already running.
-1. Test the new created queue using running the following command in two (2) diferent terminal consoles
+1. Test the new created queue using running the following command in two (2) diferent terminal consoles from `instances/mybroker/bin`
 
    ```sh
    $ ./artemis consumer --destination topic://testTopic --message-count 10
