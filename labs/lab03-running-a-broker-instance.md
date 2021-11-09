@@ -14,14 +14,14 @@
    $ ./artemis run
    ```
 
-The broker will produce output similar to the following:
+1. The broker will produce output similar to the following:
 
-```sh
-...
-INFO  | main | Initialized dispatch-hawtio-console plugin
-23:54:24,475 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://localhost:8161
-23:54:24,475 INFO  [org.apache.activemq.artemis] AMQ241002: Artemis Jolokia REST API available at http://localhost:8161/jolokia
-```
+   ```sh
+   ...
+   INFO  | main | Initialized dispatch-hawtio-console plugin
+   23:54:24,475 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://localhost:8161
+   23:54:24,475 INFO  [org.apache.activemq.artemis] AMQ241002: Artemis Jolokia REST API available at http://localhost:8161/jolokia
+   ```
 
 ## Test the broker with the CLI
 
