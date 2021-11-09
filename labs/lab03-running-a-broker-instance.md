@@ -25,11 +25,23 @@ INFO  | main | Initialized dispatch-hawtio-console plugin
 
 ## Test the broker with the CLI
 
-1. Navigate to the bin folder of the broker instance.
 1. In a separate terminal/console run the artemis command to consume from the default address
 
    ```sh
    $ ./artemis consumer
+   ```
+   
+   ```bash
+   bin % ./artemis consumer
+   Connection brokerURL = tcp://localhost:61616
+   Consumer:: filter = null
+   Consumer ActiveMQQueue[TEST], thread=0 wait until 1000 messages are consumed
+   Received 1000
+   Consumer ActiveMQQueue[TEST], thread=0 Consumed: 1000 messages
+   Consumer ActiveMQQueue[TEST], thread=0 Elapsed time in second : 88 s
+   Consumer ActiveMQQueue[TEST], thread=0 Elapsed time in milli second : 88300 milli seconds
+   Consumer ActiveMQQueue[TEST], thread=0 Consumed: 1000 messages
+   Consumer ActiveMQQueue[TEST], thread=0 Consumer thread finished
    ```
 
 1. In another terminal/console do the same but this time to produce messages to the same default address
@@ -39,6 +51,16 @@ INFO  | main | Initialized dispatch-hawtio-console plugin
    ```
 
    >  *You will see the producer sending 1000 messages, and the same amount, received by the consumer.*
+      
+      ```bash
+      bin % ./artemis producer
+      Connection brokerURL = tcp://localhost:61616
+      Producer ActiveMQQueue[TEST], thread=0 Started to calculate elapsed time ...
+
+      Producer ActiveMQQueue[TEST], thread=0 Produced: 1000 messages
+      Producer ActiveMQQueue[TEST], thread=0 Elapsed time in second : 40 s
+      Producer ActiveMQQueue[TEST], thread=0 Elapsed time in milli second : 40558 milli seconds
+      ```
 
 ## Management console
 
