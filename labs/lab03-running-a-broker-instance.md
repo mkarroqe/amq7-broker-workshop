@@ -64,8 +64,9 @@
 
 ## Management console
 
-1. To access the management web console, open a browser and goto http://localhost:8161/hawtio/login
-1. Log in to the console using the username/password entered when the AMQ 7 instance was created.
+1. To access the management web console, open a browser and go to http://localhost:8161/
+2. From there, select `Management Console`
+3. Log in to the console using the username/password entered when the AMQ 7 instance was created.
 
    > In this case is `admin`/`admin`
 
