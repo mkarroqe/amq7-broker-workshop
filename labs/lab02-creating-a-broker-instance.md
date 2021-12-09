@@ -30,7 +30,7 @@ The `artemis` script located in the `bin` folder is the starting point to manage
 
 ```sh
 $ cd instances/mybroker
-$ tree
+$ tree -L 1
 |-- bin
 |-- data
 |-- etc
