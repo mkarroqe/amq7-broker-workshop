@@ -16,7 +16,7 @@
 ## Directory Structure
 
 ```sh
-$ tree
+$ tree -L 1
 |-- bin
 |-- etc
 |-- examples
